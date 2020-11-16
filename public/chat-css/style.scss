@@ -216,11 +216,11 @@ input {
 
 /* MESSAGE INPUT */
 .chat-box-tray {
-	background: #eee;
 	display: flex;
 	padding: 10px 15px;
 	align-items: center;
 	justify-content: space-between;
+	margin-top: 0.65rem;
 
 	input {
 		padding: 0.5rem 1rem;
@@ -254,8 +254,10 @@ input {
 
 @media only screen and (max-width: 768px) {
 	body {
+		height: 100%;
+		width: 100%;
 		overflow-y: scroll;
-		overflow-x: hidden;
+		overflow-x: hidden !important;
 		padding-top: 0;
 	}
 
