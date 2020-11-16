@@ -13,6 +13,23 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+.custom-button {
+	text-decoration: none;
+	background: $blue;
+	color: #fff;
+	border: transparent 2px solid;
+	padding: 0.5rem 1rem;
+	border-radius: 7px;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background: transparent;
+		border: $blue 2px solid;
+		text-decoration: none;
+		color: $blue;
+	}
+}
+
 input {
 	border: none;
 	border-radius: 30px;

@@ -9,6 +9,24 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.custom-button {
+  text-decoration: none;
+  background: #237bd3;
+  color: #fff;
+  border: transparent 2px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background: transparent;
+  border: #237bd3 2px solid;
+  text-decoration: none;
+  color: #237bd3;
+}
+
 input {
   border: none;
   border-radius: 30px;
