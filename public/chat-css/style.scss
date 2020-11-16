@@ -7,7 +7,7 @@ body {
 	overflow-x: hidden;
 	height: 100vh;
 	width: 100vw;
-	background-color: #3498db;
+	padding-top: 0.5vh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -48,7 +48,7 @@ input {
 
 //BOOTSTRAP SUCKS SOMETIMES
 .container {
-	margin: 10vh auto !important;
+	margin-top: 10vh;
 	padding: 0;
 	border-radius: 7px;
 
@@ -238,10 +238,11 @@ input {
 	body {
 		overflow-y: scroll;
 		overflow-x: hidden;
+		padding-top: 0;
 	}
 
 	.container {
-		margin: 0;
+		margin: 0 0;
 		overflow-x: hidden;
 
 		.col-md-4 {
