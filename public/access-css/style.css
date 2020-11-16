@@ -126,7 +126,7 @@ body {
 .container .access .middle-content .username-container label {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
-  color: #237bd3;
+  color: #f4f4f4;
 }
 
 .container .access .middle-content .username-container #username-input {
@@ -171,7 +171,7 @@ body {
 .container .access .middle-content .room-select--container label {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
-  color: #237bd3;
+  color: #f4f4f4;
 }
 
 .container .access .middle-content .room-select--container #room-select {
