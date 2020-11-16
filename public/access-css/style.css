@@ -1,1 +1,242 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #237bd3;
+  background: radial-gradient(circle, #237bd3 0%, black 71%);
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .access {
+  width: 25rem;
+  height: 65vh;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 100px #888888;
+          box-shadow: 10px 10px 100px #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .access .logo-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .access .logo-container .circle {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background: #237bd3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#237bd3), to(black));
+  background: linear-gradient(0deg, #237bd3 0%, black 100%);
+}
+
+.container .access .logo-container .logo {
+  position: absolute;
+  height: 7rem;
+  width: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .access .middle-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.container .access .middle-content .username-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .access .middle-content .username-container label {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #237bd3;
+}
+
+.container .access .middle-content .username-container #username-input {
+  border: #237bd3 1.5px solid;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.2rem;
+}
+
+.container .access .middle-content .username-container #username-input::-webkit-input-placeholder {
+  color: #237bd3;
+}
+
+.container .access .middle-content .username-container #username-input:-ms-input-placeholder {
+  color: #237bd3;
+}
+
+.container .access .middle-content .username-container #username-input::-ms-input-placeholder {
+  color: #237bd3;
+}
+
+.container .access .middle-content .username-container #username-input::placeholder {
+  color: #237bd3;
+}
+
+.container .access .middle-content .username-container #username-input:focus {
+  outline: none;
+}
+
+.container .access .middle-content .room-select--container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .access .middle-content .room-select--container label {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #237bd3;
+}
+
+.container .access .middle-content .room-select--container #room-select {
+  border: #237bd3 1.5px solid;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.2rem;
+  color: #237bd3;
+}
+
+.container .access .middle-content .room-select--container #room-select option {
+  border: none;
+  color: #237bd3;
+}
+
+.container .access .middle-content .room-select--container #room-select:focus {
+  outline: none;
+}
+
+.container .access .join-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .access .join-container #join-chat {
+  text-decoration: none;
+  color: #f4f4f4;
+  text-align: center;
+  width: 100%;
+  background: #237bd3;
+  padding: 0.8rem 1rem;
+  border: transparent 1.5px solid;
+  border-radius: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .access .join-container #join-chat:hover {
+  background: transparent;
+  border: #f4f4f4 1.5px solid;
+  color: #f4f4f4;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: #237bd3;
+    background: linear-gradient(279deg, #237bd3 0%, #062d53 100%);
+  }
+  .container {
+    width: 100%;
+  }
+  .container .access {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

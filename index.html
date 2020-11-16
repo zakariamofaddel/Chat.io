@@ -3,9 +3,52 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/access-css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
 		<title>Chat.io</title>
 	</head>
 	<body>
-		<div>test</div>
+		<div class="container">
+			<div class="access">
+				<!-- logo container -->
+				<div class="logo-container">
+					<div class="circle"></div>
+					<img src="/public/imgs/logo.png" alt="logo image" class="logo" />
+				</div>
+
+				<!-- middle-content container -->
+				<div class="middle-content">
+					<!-- Username container -->
+					<div class="username-container">
+						<label for="username-input">Username</label>
+						<input
+							id="username-input"
+							type="text"
+							name="username-input"
+							placeholder="Enter your username"
+						/>
+					</div>
+
+					<!-- Room Select container -->
+					<div class="room-select--container">
+						<label for="cars">Rooms:</label>
+
+						<select name="room-select" id="room-select">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Jobs">Jobs</option>
+							<option value="TikTok">TikTok</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Join chat button -->
+				<div class="join-container">
+					<a href="chat.html" id="join-chat">Join Chat</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

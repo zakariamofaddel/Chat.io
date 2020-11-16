@@ -3,6 +3,7 @@ $blue: #237bd3;
 
 //GENERAL STYLING
 body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	height: 100vh;
@@ -11,6 +12,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	background: rgb(35, 123, 211);
+	background: radial-gradient(
+		circle,
+		rgba(35, 123, 211, 1) 0%,
+		rgba(0, 0, 0, 1) 71%
+	);
 }
 
 .custom-button {
@@ -48,9 +55,10 @@ input {
 
 //BOOTSTRAP SUCKS SOMETIMES
 .container {
-	margin-top: 10vh;
+	margin: 0 !important;
 	padding: 0;
 	border-radius: 7px;
+	background: #f4f4f4;
 
 	#username,
 	#room-name {
@@ -65,7 +73,8 @@ input {
 			display: flex;
 			overflow-x: hidden;
 			flex-direction: column;
-			height: 67vh;
+			height: 69vh;
+			background: #fff;
 		}
 	}
 
@@ -75,7 +84,7 @@ input {
 	}
 
 	.row.no-gutter {
-		border: #f4f4f4 1px solid;
+		border: #f4f4f4 5px solid;
 		border-radius: 10px;
 		box-shadow: 10px 10px 50px #888888;
 	}
@@ -171,6 +180,7 @@ input {
 	overflow-y: scroll;
 	height: 60vh;
 	padding: 1rem;
+	background: #fff;
 
 	.chat-bubble {
 		padding: 10px 14px;
@@ -234,6 +244,14 @@ input {
 	}
 }
 
+@media only screen and (min-width: 768px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	body {
 		overflow-y: scroll;
@@ -242,14 +260,20 @@ input {
 	}
 
 	.container {
-		margin: 0 0;
+		width: 100%;
 		overflow-x: hidden;
+		border-radius: 0px;
 
 		.col-md-4 {
 			#users-list {
 				height: 35vh;
 			}
 		}
+	}
+
+	.row.no-gutter {
+		border-radius: none;
+		box-shadow: 0px;
 	}
 
 	.chat-panel {

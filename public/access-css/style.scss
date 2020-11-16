@@ -1,0 +1,191 @@
+//VARIABLES
+$blue: #237bd3;
+
+//GENERAL STYLING
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(35, 123, 211);
+	background: radial-gradient(
+		circle,
+		rgba(35, 123, 211, 1) 0%,
+		rgba(0, 0, 0, 1) 71%
+	);
+	overflow: hidden;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// main container
+.container {
+	width: 50%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	//card container
+	.access {
+		width: 25rem;
+		height: 65vh;
+		border-radius: 15px;
+		box-shadow: 10px 10px 100px #888888;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		justify-content: space-around;
+
+		//LOGO
+		.logo-container {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 1;
+
+			.circle {
+				position: relative;
+				height: 10rem;
+				width: 10rem;
+				border-radius: 50%;
+				background: rgb(35, 123, 211);
+				background: linear-gradient(
+					0deg,
+					rgba(35, 123, 211, 1) 0%,
+					rgba(0, 0, 0, 1) 100%
+				);
+			}
+
+			.logo {
+				position: absolute;
+				height: 7rem;
+				width: 7rem;
+				object-fit: cover;
+			}
+		}
+
+		// MIDDLE
+		.middle-content {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			flex: 2;
+
+			.username-container {
+				width: 80%;
+				display: flex;
+				flex-direction: column;
+
+				label {
+					margin-bottom: 0.5rem;
+					font-size: 1.3rem;
+					color: $blue;
+				}
+
+				#username-input {
+					border: $blue 1.5px solid;
+					border-radius: 7px;
+					font-size: 1rem;
+					padding: 0.5rem 1rem;
+					line-height: 1.2rem;
+
+					&::placeholder {
+						color: $blue;
+					}
+
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+
+			.room-select--container {
+				width: 80%;
+				display: flex;
+				flex-direction: column;
+
+				label {
+					margin-bottom: 0.5rem;
+					font-size: 1.3rem;
+					color: $blue;
+				}
+
+				#room-select {
+					border: $blue 1.5px solid;
+					border-radius: 7px;
+					font-size: 1rem;
+					padding: 0.5rem 1rem;
+					line-height: 1.2rem;
+					color: $blue;
+
+					& option {
+						border: none;
+						color: $blue;
+					}
+
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+
+		//BUTTON CONTAINER
+		.join-container {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 1;
+
+			#join-chat {
+				text-decoration: none;
+				color: #f4f4f4;
+				text-align: center;
+				width: 100%;
+				background: $blue;
+				padding: 0.8rem 1rem;
+				border: transparent 1.5px solid;
+				border-radius: 7px;
+				transition: all 0.2s ease-in-out;
+
+				&:hover {
+					background: transparent;
+					border: #f4f4f4 1.5px solid;
+					color: #f4f4f4;
+				}
+			}
+		}
+	}
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 768px) {
+	body {
+		background: rgb(35, 123, 211);
+		background: linear-gradient(
+			279deg,
+			rgba(35, 123, 211, 1) 0%,
+			rgb(6, 45, 83) 100%
+		);
+	}
+
+	.container {
+		width: 100%;
+
+		.access {
+			width: 90%;
+		}
+	}
+}
