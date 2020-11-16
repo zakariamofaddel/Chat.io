@@ -31,7 +31,7 @@ input {
 
 //BOOTSTRAP SUCKS SOMETIMES
 .container {
-	margin: 60px auto;
+	margin: 10vh auto !important;
 	padding: 0;
 	border-radius: 7px;
 
@@ -220,10 +220,18 @@ input {
 @media only screen and (max-width: 768px) {
 	body {
 		overflow-y: scroll;
+		overflow-x: hidden;
 	}
 
-	#users-list {
-		height: 35vh;
+	.container {
+		margin: 0;
+		overflow-x: hidden;
+
+		.col-md-4 {
+			#users-list {
+				height: 35vh;
+			}
+		}
 	}
 
 	.chat-panel {
