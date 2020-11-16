@@ -1,5 +1,5 @@
 body {
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
@@ -7,76 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
-
-.container {
-  margin: 60px auto;
-  padding: 0;
-  border-radius: 7px;
-}
-
-.container .col-md-4 {
-  border-right: #f4f4f4 2px solid;
-}
-
-.container .col-md-4,
-.container .col-md-8 {
-  padding: 0 !important;
-}
-
-.container .row.no-gutter {
-  border: #f4f4f4 1px solid;
-  border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 50px #888888;
-          box-shadow: 10px 10px 50px #888888;
-}
-
-.profile-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.settings-tray {
-  background: #eee;
-  padding: 10px 15px;
-  height: 10vh;
-}
-
-.settings-tray--right {
-  float: right;
-}
-
-.settings-tray--right i {
-  margin-top: 10px;
-  font-size: 25px;
-  color: grey;
-  margin-left: 14px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.settings-tray--right i:hover {
-  color: #237bd3;
-  cursor: pointer;
-}
-
-.search-box {
-  background: #fafafa;
-  padding: 10px 13px;
-}
-
-.search-box .input-wrapper {
-  background: #fff;
-  border-radius: 40px;
-}
-
-.search-box .input-wrapper i {
-  color: grey;
-  margin-left: 7px;
-  vertical-align: middle;
 }
 
 input {
@@ -111,6 +41,89 @@ input::placeholder {
 
 input:focus {
   outline: none;
+}
+
+.container {
+  margin: 60px auto;
+  padding: 0;
+  border-radius: 7px;
+}
+
+.container #username,
+.container #room-name {
+  margin: 0;
+}
+
+.container .col-md-4 {
+  border-right: #ececec 2px solid;
+}
+
+.container .col-md-4 #users-list {
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 67vh;
+}
+
+.container .col-md-4,
+.container .col-md-8 {
+  padding: 0 !important;
+}
+
+.container .row.no-gutter {
+  border: #f4f4f4 1px solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 50px #888888;
+          box-shadow: 10px 10px 50px #888888;
+}
+
+.container .profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .room-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: transparent;
+}
+
+.settings-tray {
+  background: #eee;
+  padding: 10px 15px;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settings-tray--right i {
+  margin-top: 10px;
+  font-size: 25px;
+  color: grey;
+  margin-left: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.settings-tray--right i:hover {
+  color: #237bd3;
+  cursor: pointer;
 }
 
 .friend-drawer {
@@ -161,24 +174,6 @@ input:focus {
   color: #fff !important;
 }
 
-hr {
-  margin: 5px auto;
-  width: 60%;
-}
-
-.chat-bubble {
-  padding: 10px 14px;
-  background: #eee;
-  margin: 0.4rem 0;
-  border-radius: 9px;
-  position: relative;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -192,6 +187,18 @@ hr {
   overflow-y: scroll;
   height: 60vh;
   padding: 1rem;
+}
+
+.chat-panel .chat-bubble {
+  padding: 10px 14px;
+  background: #eee;
+  margin: 0.4rem 0;
+  border-radius: 9px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 25rem;
 }
 
 .chat-panel .bubble-right--container {
@@ -223,6 +230,11 @@ hr {
           justify-content: flex-start;
 }
 
+.chat-panel #username {
+  margin: 0 0.5rem 0 0;
+}
+
+/* MESSAGE INPUT */
 .chat-box-tray {
   background: #eee;
   display: -webkit-box;
@@ -265,21 +277,15 @@ hr {
   color: #237bd3;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-y: scroll;
   }
-  100% {
-    opacity: 1;
+  #users-list {
+    height: 35vh;
   }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  .chat-panel {
+    height: 85vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

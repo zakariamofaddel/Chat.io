@@ -19,98 +19,82 @@
 	<body>
 		<div class="container">
 			<div class="row no-gutter">
+				<!-- *LEFT PANEL -->
 				<div class="col-md-4">
+					<!-- *TOP LEFT USER TRAY -->
 					<div class="settings-tray">
-						<img
-							class="profile-image"
-							src="public/css/imgs/profile.jpg"
-							alt="Profile img"
-						/>
 						<span class="settings-tray--right">
-							<i class="material-icons">cached</i>
-							<i class="material-icons">message</i>
 							<i class="material-icons">menu</i>
 						</span>
 					</div>
-					<div class="friend-drawer friend-drawer--onhover">
-						<div class="content-left">
-							<img
-								class="profile-image"
-								src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg"
-								alt=""
-							/>
-							<div class="text">
-								<h6>Dad</h6>
+
+					<!-- *LIST OF USERS -->
+					<div id="users-list">
+						<div
+							id="connected-user"
+							class="friend-drawer friend-drawer--onhover"
+						>
+							<div class="content-left">
+								<img
+									class="profile-image"
+									src="public/css/imgs/profile-placeholder.png"
+									alt=""
+								/>
+								<div class="text">
+									<h6 id="username">User</h6>
+								</div>
 							</div>
 						</div>
-						<span class="time text-muted small">13:21</span>
+						<div
+							id="connected-user"
+							class="friend-drawer friend-drawer--onhover"
+						>
+							<div class="content-left">
+								<img
+									class="profile-image"
+									src="public/css/imgs/profile-placeholder.png"
+									alt=""
+								/>
+								<div class="text">
+									<h6 id="username">User</h6>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+
+				<!-- *RIGHT PANEL -->
 				<div class="col-md-8">
+					<!-- *TOP RIGHT ROOM TRAY -->
 					<div class="friend-drawer settings-tray friend-drawer--grey">
 						<div class="content-left">
 							<img
-								class="profile-image"
-								src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg"
+								class="room-image"
+								src="public/css/imgs/javascript-room.png"
 								alt=""
 							/>
 							<div class="text">
-								<h6>Dad</h6>
+								<h6 id="room-name">JavaScript</h6>
 							</div>
 						</div>
-						<span class="settings-tray--right">
-							<i class="material-icons">cached</i>
-							<i class="material-icons">message</i>
-							<i class="material-icons">menu</i>
-						</span>
 					</div>
+
+					<!-- *CHAT PANEL -->
 					<div class="chat-panel">
 						<div class="chat-row">
 							<div class="bubble-left--container">
+								<h6 id="username">User</h6>
 								<div class="chat-bubble chat-bubble--left">Hello dude!</div>
 							</div>
 						</div>
 						<div class="chat-row">
 							<div class="bubble-right--container">
-								<div class="chat-bubble chat-bubble--right">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-right--container">
-								<div class="chat-bubble chat-bubble--right">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-left--container">
-								<div class="chat-bubble chat-bubble--left">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-left--container">
-								<div class="chat-bubble chat-bubble--left">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-left--container">
-								<div class="chat-bubble chat-bubble--left">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-left--container">
-								<div class="chat-bubble chat-bubble--right">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-right--container">
-								<div class="chat-bubble chat-bubble--right">Hello dude!</div>
-							</div>
-						</div>
-						<div class="chat-row">
-							<div class="bubble-right--container">
-								<div class="chat-bubble chat-bubble--right">Hello dude!</div>
+								<div class="chat-bubble chat-bubble--right">Hi!</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- *SEND MESSAGE TRAY -->
 					<div class="row">
 						<div class="col-12">
 							<form class="chat-box-tray">
