@@ -208,6 +208,7 @@ input:focus {
 
 .chat-panel {
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 60vh;
   padding: 1rem;
   background: #fff;
@@ -223,6 +224,11 @@ input:focus {
   width: -moz-max-content;
   width: max-content;
   max-width: 25rem;
+  word-wrap: break-word;
+}
+
+.chat-panel #meta-username {
+  width: 5rem;
 }
 
 .chat-panel .bubble-right--container {
@@ -332,7 +338,7 @@ input:focus {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.9px) {
   body {
     height: 100%;
     width: 100%;
@@ -360,7 +366,7 @@ input:focus {
     height: 85vh;
   }
   .chat-panel .chat-bubble {
-    max-width: 22rem;
+    max-width: 17rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

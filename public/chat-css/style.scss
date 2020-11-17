@@ -178,6 +178,7 @@ input {
 //CHAT PANEL
 .chat-panel {
 	overflow-y: scroll;
+	overflow-x: hidden;
 	height: 60vh;
 	padding: 1rem;
 	background: #fff;
@@ -190,6 +191,11 @@ input {
 		position: relative;
 		width: max-content;
 		max-width: 25rem;
+		word-wrap: break-word;
+	}
+
+	#meta-username {
+		width: 5rem;
 	}
 
 	.bubble-right--container {
@@ -269,7 +275,7 @@ input {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.9px) {
 	body {
 		height: 100%;
 		width: 100%;
@@ -303,7 +309,7 @@ input {
 		height: 85vh;
 
 		.chat-bubble {
-			max-width: 22rem;
+			max-width: 17rem;
 		}
 	}
 }
