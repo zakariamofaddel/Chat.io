@@ -231,6 +231,8 @@ input {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border: none;
+		background-color: transparent;
 
 		i {
 			color: grey;
@@ -280,5 +282,9 @@ input {
 
 	.chat-panel {
 		height: 85vh;
+
+		.chat-bubble {
+			max-width: 22rem;
+		}
 	}
 }

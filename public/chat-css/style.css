@@ -288,6 +288,8 @@ input:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: none;
+  background-color: transparent;
 }
 
 .chat-box-tray #send-message i {
@@ -338,6 +340,9 @@ input:focus {
   }
   .chat-panel {
     height: 85vh;
+  }
+  .chat-panel .chat-bubble {
+    max-width: 22rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
