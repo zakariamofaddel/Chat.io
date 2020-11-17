@@ -197,6 +197,11 @@ input {
 		align-items: center;
 		justify-content: flex-end;
 
+		.meta {
+			margin: 0 0 0 0.5rem;
+			font-size: 0.7rem;
+		}
+
 		.chat-bubble {
 			background: $blue;
 			color: #fff;
@@ -207,6 +212,11 @@ input {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+
+		.meta {
+			margin: 0 0.5rem 0 0;
+			font-size: 0.7rem;
+		}
 	}
 
 	#username {
@@ -233,6 +243,11 @@ input {
 		justify-content: center;
 		border: none;
 		background-color: transparent;
+
+		&:focus {
+			border: none;
+			outline: none;
+		}
 
 		i {
 			color: grey;
@@ -261,6 +276,10 @@ input {
 		overflow-y: scroll;
 		overflow-x: hidden !important;
 		padding-top: 0;
+	}
+
+	.custom-button {
+		padding: 0.5rem 0.5rem;
 	}
 
 	.container {

@@ -237,6 +237,11 @@ input:focus {
           justify-content: flex-end;
 }
 
+.chat-panel .bubble-right--container .meta {
+  margin: 0 0 0 0.5rem;
+  font-size: 0.7rem;
+}
+
 .chat-panel .bubble-right--container .chat-bubble {
   background: #237bd3;
   color: #fff;
@@ -252,6 +257,11 @@ input:focus {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.chat-panel .bubble-left--container .meta {
+  margin: 0 0.5rem 0 0;
+  font-size: 0.7rem;
 }
 
 .chat-panel #username {
@@ -292,6 +302,11 @@ input:focus {
   background-color: transparent;
 }
 
+.chat-box-tray #send-message:focus {
+  border: none;
+  outline: none;
+}
+
 .chat-box-tray #send-message i {
   color: grey;
   font-size: 30px;
@@ -324,6 +339,9 @@ input:focus {
     overflow-y: scroll;
     overflow-x: hidden !important;
     padding-top: 0;
+  }
+  .custom-button {
+    padding: 0.5rem 0.5rem;
   }
   .container {
     width: 100%;

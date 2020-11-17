@@ -82,8 +82,9 @@
 
 					<!-- *CHAT PANEL -->
 					<div class="chat-panel">
-						<div class="chat-row">
+						<!-- <div class="chat-row">
 							<div class="bubble-left--container">
+								<p class="meta">20.18</p>
 								<h6 id="username">User</h6>
 								<div class="chat-bubble chat-bubble--left">Hello dude!</div>
 							</div>
@@ -96,15 +97,22 @@
 									voluptas debitis libero error, expedita ipsum, ratione sequi!
 									Molestias cum praesentium dignissimos possimus asperiores?
 								</div>
+								<p class="meta">20.18</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 					<!-- *SEND MESSAGE TRAY -->
 					<div class="row">
 						<div class="col-12">
-							<form class="chat-box-tray">
-								<input type="text" placeholder="Type your message here..." />
+							<form id="chat-form" class="chat-box-tray">
+								<input
+									id="msg"
+									type="text"
+									placeholder="Type your message here..."
+									required
+									autocomplete="off"
+								/>
 								<button type="submit" id="send-message">
 									<i class="material-icons">send</i>
 								</button>
@@ -114,5 +122,10 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- SOCKET.IO -->
+		<script src="/socket.io/socket.io.js"></script>
+		<!-- MAIN JS (frontend) -->
+		<script src="./js/main.js"></script>
 	</body>
 </html>
