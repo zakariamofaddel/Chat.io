@@ -37,7 +37,7 @@ io.on("connection", (socket) => {
 			"greyMessage",
 			formatMessage(
 				"Zakaria",
-				`Hi ${user.username}, welcome to Chat.io! The room you are in is "${user.room}", enjoy your stay!`
+				`Hi ${user.username}, welcome to Chat.io, enjoy your stay!`
 			)
 		);
 
