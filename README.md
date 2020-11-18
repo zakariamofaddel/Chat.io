@@ -16,11 +16,18 @@ Sections headers will be used to reference location of destination.
 
 ## Description
 
-/
+Chat.io is a simple chat application that allows to send and receive messages in real time thanks to socket.io.  
+The access is a simple form that submits to the chat.html file.  
+The messages are emitted from the front-end to the server and then the server sends them back to the front-end (differenciating between "sent messages" and "received messages") so that they can be displayed on the DOM to everybody. The server sends back two different events, one for the user that sent the message (making it a blue chat-bubble) and one for the receivers (making it a grey chat-bubble).
 
 #### Technologies
 
-/
+- HTML5
+- CSS3 (SCSS and BOOTSTRAP)
+- Vanilla JavaScript
+- NodeJs
+- Express
+- Socket.io
 
 [Back To The Top](#real-time-chat-web-app)
 
@@ -31,12 +38,6 @@ Sections headers will be used to reference location of destination.
 /
 
 [Back To The Top](#real-time-chat-web-app)
-
----
-
-#### API Reference
-
-/
 
 ---
 
